@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="bg-img"></div>
+    <nav>
+        <div class="logo">
+            <a href="#" id="logo">
+                <img src="img/logo.png" alt="" width="50px" height="50px">
+                <h1 style="font-size: 30px;">Library</h1>
+            </a>
+        </div>
+
+        <ul class="nav__list" id="navlinkitems">
+            <li class="nav__item">
+                <a href="#" class="nav__link" id="home">Home</a>
+            </li>
+            <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+                <a href="#categories" class="nav__link">Categories</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+            </li>
+        </ul>
+
+        <ul class="navright__list">
+            <li class="navright__item"><button type="button" id="addbutton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="img/market.png" width="30px" height="30px" alt="">
+                    </button>
+            </li>
+            <li class="navright__item">
+                <a id="addbutton" href="#"><img src="img/add.png" width="30px" height="30px"></a>
+            </li>
+        </ul>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Books List</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Book</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cartItems">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Validate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="bg-text">
+        <h1>Read, Learn, Inspire</h1>
+        <h2>Because knowledge can never be snatched away</h2>
+        <h3>We’ve got the book you need</h3>
+    </div>
+
+
+    <div class="category">
+
+        <div class="about" id="about">
+            <div class="text">
+                <h1>Grow your mind to a positive side.</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <img src="img/book2.png" alt="">
+        </div>
+
+
+        <div class="hbooks" id="categories">
+            <h1 style="color: aliceblue;padding: 15px;">History</h1>
+            <div id="hbookss">
+            </div>
+        </div>
+
+        <div class="tbooks">
+            <h1 style="color: aliceblue;">Tech</h1>
+            <div id="tbookss">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <div class="content">
+            <form class="formcontact">
+                <div class="row">
+                    <div class="col-6">
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" type="email" id="email" name="_replyto" placeholder="Your E-mail" required>
+                    </div>
+                </div>
+                <div class="form-group my-2">
+                    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button class="btn btn-primary mt-2" type="submit">Send</button>
+            </form>
+            <div class="info">
+                <h4>Address</h4>
+                <h6>Bab ezouar, ALGER</h6>
+                <h4>Phone</h4>
+                <h6>+213525252523</h6>
+                <h4>Email</h4>
+                <h6>Library.book.dz@gmail.com</h6>
+            </div>
+        </div><br>
+        <h3 style="color: blanchedalmond; text-align: center;">&copy; Library. All rights reserved.</h3>
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
